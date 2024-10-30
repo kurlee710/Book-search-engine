@@ -13,7 +13,7 @@ interface JwtPayload {
 // Middleware for Express with GraphQL
 export const authenticateToken = (
   req: Request,
-  res: Response,
+  _: Response,
   next: NextFunction
 ) => {
   const authHeader = req.headers.authorization;
