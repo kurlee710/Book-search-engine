@@ -3,7 +3,9 @@ import path from "node:path";
 
 import type { Request, Response } from "express";
 import { ApolloServer } from "@apollo/server";
-import { typeDefs, resolvers } from "./schemas/index.js";
+// import { typeDefs, resolvers } from "./schemas/index.js";
+import typeDefs from "./schemas/typeDefs.js";
+import resolvers from "./schemas/resolvers.js";
 import { expressMiddleware } from "@apollo/server/express4";
 import { authenticateToken } from "./services/auth.js";
 
