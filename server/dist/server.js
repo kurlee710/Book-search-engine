@@ -1,8 +1,8 @@
 import express from "express";
 import { ApolloServer } from "@apollo/server";
-// import { typeDefs, resolvers } from "./schemas/index.js";
-import typeDefs from "./schemas/typeDefs.js";
-import resolvers from "./schemas/resolvers.js";
+import { typeDefs, resolvers } from "./schemas/index.js";
+// import typeDefs from "./schemas/typeDefs.js";
+// import resolvers from "./schemas/resolvers.js";
 import db from "./config/connection.js";
 import { expressMiddleware } from "@apollo/server/express4";
 import path from "node:path";
